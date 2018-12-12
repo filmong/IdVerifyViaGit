@@ -9,7 +9,8 @@ jobs:
       - checkout
       - run: find
       # - run: dotnet build ./test/test.csproj
-      - run: dotnet run --project ./IdVerify.csproj
+      # - run: dotnet run --project ./IdVerify.csproj
+      - run: func host start --build
       #- run:  
           # name: Build
           # command: dotnet build
