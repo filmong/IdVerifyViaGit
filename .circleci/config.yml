@@ -3,8 +3,8 @@ jobs:
   # job name is "one:"
   build:
     docker:
-      #- image: microsoft/dotnet:2.1-runtime
-      - image: microsoft/dotnet:2.1.300-preview2-sdk-alpine
+      - image: microsoft/dotnet:2.1-runtime
+      #- image: microsoft/dotnet:2.1.300-preview2-sdk-alpine
     steps:
       - checkout
       - run: find
