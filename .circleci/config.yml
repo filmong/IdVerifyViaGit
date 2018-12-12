@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run: find
       # - run: dotnet build ./test/test.csproj
-      - run: dotnet run --project ./idverify.csproj
+      - run: dotnet run --project ./IdVerify.csproj
       #- run:  
           # name: Build
           # command: dotnet build
