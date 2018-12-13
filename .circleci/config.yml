@@ -3,13 +3,14 @@ jobs:
   # job name is "one:"
   build:
     docker:
-      #- image: microsoft/dotnet:2.1-runtime
-      - image: microsoft/dotnet:2.1.300-preview2-sdk-alpine
+      - image: microsoft/dotnet:2.1-runtime
+      #- image: microsoft/dotnet:2.1.300-preview2-sdk-alpine
     steps:
       - checkout
       - run: find
       # - run: dotnet build ./test/test.csproj
-      - run: dotnet run --project ./idverify.csproj
+      # - run: dotnet run --project ./IdVerify.csproj
+      - run: func host start --build
       #- run:  
           # name: Build
           # command: dotnet build
