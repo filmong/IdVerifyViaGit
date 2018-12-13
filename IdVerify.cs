@@ -24,9 +24,9 @@ namespace IdVerify
         const string AuthorizationHeader = "Authorization";
         const string AuthorizationHeaderValue = "";
 
-        [FunctionName("performIdVerify")]
+        [FunctionName("doIdVerify")]
         public static async Task<IActionResult> Run1Async(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]HttpRequest req,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = null)]HttpRequest req,
             TraceWriter log)
         {
             log.Info("HTTP triggered request is started processing...");
