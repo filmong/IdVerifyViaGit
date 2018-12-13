@@ -32,7 +32,7 @@ namespace IdVerify
             log.Info("HTTP triggered request is started processing...");            
 
             log.Info("HTTP request is completed processing.");
-            return new OkObjectResult("success");
+            return new OkObjectResult("success after CI and CD");
         }
 
         [FunctionName("getIdVerify")]
