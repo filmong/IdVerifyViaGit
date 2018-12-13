@@ -45,7 +45,7 @@ namespace IdVerify
             log.Info("Http request is processed successfully.");
 
             // return to client appropriate object result saying request is processed
-            return new OkObjectResult("success");
+            return new OkObjectResult("success is ci and cd");
         }
         /// <summary>
         /// 
